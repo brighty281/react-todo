@@ -1,0 +1,161 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  font-family: Arial, sans-serif;
+  color: white;
+  line-height: 1.6;
+}
+
+.app {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  width: 90%;
+  max-width: 800px;
+  padding: 1em;
+  border-radius: 8px;
+  background-color: #9f1996;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.app .mainHeading h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.app h1,
+h2 {
+  color: white;
+}
+
+.app .subHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.app .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 500px;
+  margin: 0.8em 0;
+  background-color: white;
+  border-radius: 8px;
+  padding: 0.5em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.app .input input {
+  width: 85%;
+  height: 2em;
+  border: none;
+  outline: none;
+  padding-left: 0.5em;
+  border-radius: 4px;
+  margin-right: 0.5em;
+  font-size: 1.1em;  /* Increased font size */
+  font-weight: bold;  /* Made text bolder */
+}
+
+.app .input input::placeholder {
+  color: #888;
+  font-weight: normal;  /* Keeping placeholder text normal */
+}
+
+.app i {
+  cursor: pointer;
+  font-size: 1.2em;
+  color: grey;
+  transition: color 0.3s;
+}
+
+.app i:hover {
+  color: #1e90ff;
+}
+
+.todos-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+.todos,
+.completed-todos {
+  width: 45%;
+}
+
+.todos h3,
+.completed-todos h3 {
+  text-align: center;
+  color: white;
+  border-bottom: 2px solid #1e90ff;
+  padding-bottom: 0.5em;
+}
+
+.app .todos .todo,
+.app .completed-todos .todo {
+  margin-top: 0.8em;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  padding: 0.8em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.app .todos .todo:hover,
+.app .completed-todos .todo:hover {
+  transform: scale(1.02);
+}
+
+.app .todos .todo {
+  width: 100%;
+}
+
+.app .completed-todos .todo {
+  width: 100%;
+}
+
+.app .todos .todo .left,
+.app .completed-todos .todo .left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.app .todos .todo .left p,
+.app .completed-todos .todo .left p {
+  margin-left: 0.5em;
+  font-size: 1em;
+  font-weight: 700;
+  color: #444;
+}
+
+.app .right {
+  display: flex;
+  align-items: center;
+}
+
+.app .right i {
+  margin-left: 10px;
+  cursor: pointer;
+  color: grey;
+  transition: color 0.3s;
+}
+
+.app .right i:hover {
+  color: #1e90ff;
+}
